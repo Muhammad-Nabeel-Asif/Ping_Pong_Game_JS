@@ -14,8 +14,47 @@
     />
     <title>Ping Pong</title>
   </head>
+
   <body>
-    <!-- <img src="https://images.unsplash.com/photo-1515773512591-dfaf9e052325?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHRhYmxlJTIwdGVubmlzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"> -->
+    <div class="badge bg-success text-wrap">
+      <h1 class="display-5">Ping Pong</h1>
+    </div>
+
+    <!-- Image Card-->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card" style="width: 20rem">
+          <img
+            src="https://images.unsplash.com/photo-1573988127517-7a9794fac0a6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHRhYmxlJTIwdGVubmlzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Ping Pong Score Keeper</h5>
+            <p class="display-6"><span>0</span> to <span>0</span></p>
+            <p class="fs-5 text">Use the buttons below to keep Score</p>
+            <p>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Playing To :</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Three</option>
+                <option value="5">Three</option>
+                <option value="6">Three</option>
+                <option value="7">Three</option>
+                <option value="8">Three</option>
+              </select>
+            </p>
+          </div>
+          <div class="card-body">
+            <button type="button" class="btn btn-success">Player +1</button>
+            <button type="button" class="btn btn-primary">Player +2</button>
+            <button type="button" class="btn btn-danger">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="app.js"></script>
     <!-- JavaScript Bundle with Popper -->

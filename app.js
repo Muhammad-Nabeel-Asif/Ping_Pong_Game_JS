@@ -1,25 +1,35 @@
-// Capturing initial Scores of Player 1 and Player 2 .
-let p1Score = document.querySelector('#p1Score');
-let p2Score = document.querySelector('#p2Score');
-p1Score = 0;
-p2Score = 0;
+
 // Capturing Buttons for incrementing Scores of Player 1 and Player 2 and a Reset Button .
 const p1Button = document.querySelector('#p1Button');
 const p2Button = document.querySelector('#p2Button');
 const resButton = document.querySelector('#resButton');
+// Capturing initial Scores of Player 1 and Player 2 .
+let p1Display = document.querySelector('#p1Display');
+let p2Display = document.querySelector('#p2Display');
+
+let p1Score = 0;
+let p2Score = 0;
+
+let winningScore = 5;
+let isGameOver = false;
+
 
 p1Button.addEventListener('click', function () {
-    p1Score++;
-    document.querySelector('#p1Score').innerHTML = p1Score;
+    if (!isGameOver) {
+        p1Score += 1;
+    if (p1Score === winningScore) {
+        isGameOver = true;
+    }
+        p1Display.textContent = p1Score;
+}
 });
 
 p2Button.addEventListener('click', function () {
-    p2Score++;
-    document.querySelector('#p2Score').innerHTML = p2Score;
+    if (!isGameOver) {
+        p2Score += 1;
+    if (p2Score === winningScore) {
+        isGameOver = true;
+    }
+        p2Display.textContent = p2Score;
+}
 });
-
-resButton.addEventListener('click', function () {
-    document.querySelector('#p1Score').innerHTML = 0;
-    document.querySelector('#p2Score').innerHTML = 0;
-
-})

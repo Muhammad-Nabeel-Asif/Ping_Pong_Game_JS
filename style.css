@@ -2,3 +2,10 @@
   display: inline-flex;
 }
 
+.loser {
+  color: red;
+}
+
+.winner {
+  color: green;
+}
